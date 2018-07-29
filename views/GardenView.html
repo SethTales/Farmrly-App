@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Farmrly</title>
+</head>
+<link rel="stylesheet" type="text/css" href="/style/MainStyle.css">
+<body id=app>
+  
+  <!-- ===================== 3rd party javascript ==================== -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+
+  <!-- ===================== app scripts =================== -->
+  <script type ="module" src="/scripts/appInitialize.js"></script>
+
+  <div id=mainWrapper>
+    <div id=toolbarWrapper>
+      <table id=menuButtonTable cellspacing="15%">
+        <tbody id=menuButtonTableBody>
+          <tr id=menuRow1 class=responsiveIconRow>
+            <td id=new><img class=responsiveIcon src="/images/sprout.svg"></td>
+            <td id=open><img class=responsiveIcon src="/images/books.svg"></td>
+          </tr>
+          <tr id=menuRow2 class=responsiveIconRow>
+              <td id=save><img class=responsiveIcon src="/images/checked.svg"></td>
+            <td id=delete><img class=responsiveIcon src="/images/x-button.svg"></td>
+          </tr>
+        </tbody>
+  	  </table>
+    </div>
+    
+    <div id=gardenWrapper>
+      
+    </div>
+    
+    <div id="newGardenSidenav" class="sidenav">
+      <img src="/images/cancel-music.svg" id="newGardenCloseButton" class="sideNavCloseButton"></img>
+      <form id="newGardenForm">
+        Garden Name:<br>
+        <input type="text" id="gardenName" name="gardenName"><br><br>
+        Units of Measure:<br>
+        <input type="radio" name="units" value="feet" checked>Feet<br>
+        <input type="radio" name="units" value="meters">Meters<br><br>
+        Width:<br>
+        <input type="number" id="gadenWidth" name="gardenWidth"><br><br>
+        Length:<br>
+        <input type="number" id="gardenLength" name="gardenLength"><br><br>
+        Plant Hardiness Zone:<br>
+        <select id="hardinessZoneDropdown" name="hardinessZone">
+          <option value="1a">1a</option>
+          <option value="1b">1b</option>
+          <option value="2a">2a</option>
+          <option value="2b">2b</option>
+          <option value="3a">3a</option>
+          <option value="3b">3b</option>
+          <option value="4a">4a</option>
+          <option value="4b">4b</option>
+          <option value="5a">5a</option>
+          <option value="5b">5b</option>
+          <option value="6a">6a</option>
+          <option value="6b">6b</option>
+          <option value="7a">7a</option>
+          <option value="7b">7b</option>
+          <option value="8a">8a</option>
+          <option value="8b">8b</option>
+          <option value="9a">9a</option>
+          <option value="9b">9b</option>
+          <option value="10a">10a</option>
+          <option value="10b">10b</option>
+          <option value="11a">11a</option>
+          <option value="11b">11b</option>
+          <option value="12a">12a</option>
+          <option value="12b">12b</option>
+          <option value="13a">13a</option>
+          <option value="13b">13b</option>
+        </select><br><br>
+        <button type="submit" id="submitNewGarden">Create Garden</button>
+      </form>
+    </div>
+    
+    <div id="gardenPlansSidenav" class="sidenav">
+        <img src="/images/cancel-music.svg" id="gardenPlansCloseButton" class="sideNavCloseButton"></img>
+    </div>
+      
+      
+    </div>
+  </div>
+</body>
+
+</html>

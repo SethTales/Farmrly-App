@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+#mainWrapper {
+    width: 95%;
+    height: 95vh;
+    border: 2px solid black;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#toolbarWrapper {
+    width: 100%;
+    height: 16%;
+    background: blue;
+    position: absolute;
+}
+
+#gardenWrapper {
+    width: 100%;
+    height: 84%;
+    position: absolute;
+    top: 16%;
+}
+
+#menuButtonTable {
+    width: 8%;
+    height: 80%;
+    position: relative;
+}
+
+#menuButtonTableBody {
+    width: 100%;
+    height: 100%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: dimgray;
+    transition: 0.5s linear;
+}
+
+.sideNavCloseButton {
+    top: 0;
+    right: 1%;
+    height: 5%;
+    width: 5%;
+}
+
+#newGardenCloseButton
+{
+    position: absolute;
+    display: none;
+}
+
+#newGardenForm {
+    display: none;
+}
+
+#gardenPlansCloseButton {
+    position: absolute;
+    display: none;
+}
+
+
+
