@@ -24,7 +24,7 @@ function openNewGardenMenu() {
 function closeNewGardenMenu() {
     $("#newGardenForm, #newGardenCloseButton").css('display', 'none');
     $("#newGardenSidenav").css('width', '0%');
-}
+};
 
 function openGardenPlansMenu() {
     $("#gardenPlansSidenav").css('width', '30%');

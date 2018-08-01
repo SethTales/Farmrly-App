@@ -36,16 +36,23 @@
     <div id="newGardenSidenav" class="sidenav">
       <img src="/images/cancel-music.svg" id="newGardenCloseButton" class="sideNavCloseButton"></img>
       <form id="newGardenForm">
-        Garden Name:<br>
-        <input type="text" id="gardenName" name="gardenName"><br><br>
-        Units of Measure:<br>
+        <label for="gardenName">Garden Name:</label><br>
+        <input type="text" id="gardenName" name="gardenName">
+        <span class ="error" id="nameError"></span><br><br>
+
+        <label for="unit">Units of Measure:</label><br>
         <input type="radio" name="units" value="feet" checked>Feet<br>
         <input type="radio" name="units" value="meters">Meters<br><br>
-        Width:<br>
-        <input type="number" id="gadenWidth" name="gardenWidth"><br><br>
-        Length:<br>
-        <input type="number" id="gardenLength" name="gardenLength"><br><br>
-        Plant Hardiness Zone:<br>
+        
+        <label for="gardenWidth">Width:</label><br>
+        <input type="number" id="gardenWidth" name="gardenWidth">
+        <span class ="error" id="widthError"></span><br><br>
+        
+        <label for="gardenLength">Length:</label><br>
+        <input type="number" id="gardenLength" name="gardenLength">
+        <span class ="error" id="lengthError"></span><br><br>
+        
+        <label for="hardinessZoneDropdown">Plant Hardiness Zone:</label><br>
         <select id="hardinessZoneDropdown" name="hardinessZone">
           <option value="1a">1a</option>
           <option value="1b">1b</option>

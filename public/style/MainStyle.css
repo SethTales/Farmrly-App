@@ -66,6 +66,14 @@ html, body {
 
 #newGardenForm {
     display: none;
+    width: 80%;
+    margin: 15px;
+}
+
+.error { 
+    font-size: 10px; 
+    color: red; 
+    float: bottom;
 }
 
 #gardenPlansCloseButton {
