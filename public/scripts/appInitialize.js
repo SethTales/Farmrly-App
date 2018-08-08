@@ -1,5 +1,5 @@
 import {initializeCrudMenu} from './crudMenu.js';
-import {initializeNewGarden} from './newGarden.js';
+import {initializeNewGardenFormValidation} from './newGardenFormValidation.js';
 
 var appInitialize = (function() {  
 
@@ -7,7 +7,7 @@ var appInitialize = (function() {
 
     $(document).ready(function() {
         initializeCrudMenu();
-        initializeNewGarden();
+        initializeNewGardenFormValidation();
     });
 
 }());

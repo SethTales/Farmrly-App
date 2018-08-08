@@ -45,14 +45,15 @@
         <input type="radio" name="units" value="meters">Meters<br><br>
         
         <label for="gardenWidth">Width:</label><br>
-        <input type="number" id="gardenWidth" name="gardenWidth">
-        <span class ="error" id="widthError"></span><br><br>
+        <input type="text" id="gardenWidth" name="gardenWidth">
+        <span class="error" id="widthError"></span><br><br>
         
         <label for="gardenLength">Length:</label><br>
-        <input type="number" id="gardenLength" name="gardenLength">
-        <span class ="error" id="lengthError"></span><br><br>
+        <input type="text" id="gardenLength" name="gardenLength">
+        <span class="error" id="lengthError"></span><br><br>
         
         <label for="hardinessZoneDropdown">Plant Hardiness Zone:</label><br>
+        <!--TODO: the construction of the dropdown below should be done with js -->
         <select id="hardinessZoneDropdown" name="hardinessZone">
           <option value="1a">1a</option>
           <option value="1b">1b</option>
